@@ -2,23 +2,28 @@
 
 language: python
 
+os: linux
+cache: pip
+git:
+  depth: 1
+
 python:
   - "3.6"
+  - "3.8"
 
 env:
-  - TOX_ENV=py38-django-32
-  - TOX_ENV=py38-django-22
-  - TOX_ENV=py36-django-32
-  - TOX_ENV=py36-django-22
+  - DJANGO="django==2.2.*"
+  - DJANGO="django==3.2.*"
 
 matrix:
   fast_finish: true
 
-# command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
-install: pip install -r requirements_test.txt
+install:
+  - pip install -q "${DJANGO}"
+  - pip install .
+  - pip install -r requirements_test.txt
 
-# command to run tests using coverage, e.g. python setup.py test
-script: tox -e $TOX_ENV
+script: coverage run --source django_policies runtests.py
 
 after_success:
-  - codecov -e TOX_ENV
+  - coverage report
