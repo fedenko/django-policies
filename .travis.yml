@@ -26,4 +26,4 @@ install:
 script: coverage run --source django_policies runtests.py
 
 after_success:
-  - coverage report
+  - codecov
