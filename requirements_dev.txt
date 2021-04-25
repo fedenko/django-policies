@@ -1,0 +1,6 @@
+black
+invoke
+isort
+twine
+wheel
+zest.releaser
