@@ -8,7 +8,7 @@ Django Policies
 .. image:: https://travis-ci.org/fedenko/django-policies.svg?branch=main
     :target: https://travis-ci.org/fedenko/django-policies
 
-.. image:: https://codecov.io/gh/fedenko/django-policies/branch/master/graph/badge.svg
+.. image:: https://codecov.io/gh/fedenko/django-policies/branch/main/graph/badge.svg?token=Ho8G6SesGa
     :target: https://codecov.io/gh/fedenko/django-policies
 
 Policies on top of standard django permissions.
