@@ -2,10 +2,10 @@
 Django Policies
 =============================
 
-.. image:: https://badge.fury.io/py/django-policies.svg
-    :target: https://badge.fury.io/py/django-policies
+.. .. image:: https://badge.fury.io/py/django-policies.svg
+..     :target: https://badge.fury.io/py/django-policies
 
-.. image:: https://travis-ci.org/fedenko/django-policies.svg?branch=master
+.. image:: https://travis-ci.org/fedenko/django-policies.svg?branch=main
     :target: https://travis-ci.org/fedenko/django-policies
 
 .. image:: https://codecov.io/gh/fedenko/django-policies/branch/master/graph/badge.svg
